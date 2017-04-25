@@ -21,14 +21,14 @@ public class Voz {
     @DatabaseField(columnName = POLJE_OZNAKA,canBeNull = false)
     private String oznaka;
     @DatabaseField(columnName = POLJE_NAZIV,canBeNull = false)
-    private int naziv;
+    private String naziv;
     @ForeignCollectionField(foreignFieldName = "voz")
     private ForeignCollection<Vagon> vagon;
 
     public Voz() {
     }
 
-    public Voz(String oznaka, int naziv) {
+    public Voz(String oznaka, String naziv) {
         this.oznaka = oznaka;
         this.naziv = naziv;
     }
@@ -49,11 +49,11 @@ public class Voz {
         this.oznaka = oznaka;
     }
 
-    public int getNaziv() {
+    public String getNaziv() {
         return naziv;
     }
 
-    public void setNaziv(int naziv) {
+    public void setNaziv(String naziv) {
         this.naziv = naziv;
     }
 
