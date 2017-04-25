@@ -1,10 +1,12 @@
 package model;
 
 import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
 /**
  * Created by androiddevelopment on 25.4.17..
  */
+@DatabaseTable(tableName = "vagon")
 public class Vagon {
 
     public static final String POLJE_OZNAKA="oznaka";
